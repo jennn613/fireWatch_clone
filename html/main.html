@@ -13,7 +13,7 @@
       <h1><a href="./main.html">campo santo</a></h1>
       <nav id="navBox">
         <h2 class="hidden">global navigation</h2>
-        <ul>
+        <ul class="navBox-menu">
           <li><a href="#">fire watch</a></li>
           <li><a href="#">development blog</a></li>
           <li><a href="#">campo store</a></li>
@@ -22,35 +22,52 @@
       </nav>
     </header>
     <main id="main">
-    <article id="viewBox">
+    <article class="viewBox">
       <h2 class="hidden">fire watch illust</h2>
       <p class="hidden">(what is fire watch?)</p>
       <!-- parallax 이미지 배치 -->
-      <!-- <div class="view1"></div> -->
+      <!-- <div class="viewBox__img"></div> -->
     </article>
     <article class="links">
       <h2>avalable now for $19.99</h2>
-      <ul>
-        <li><a href="#">windows max linux</a></li>
-        <li><a href="#">nintendo switch</a></li>
-        <li><a href="#">playstation 4</a></li>
-        <li><a href="#">xbox one</a></li>
+      <div class="links-inner">
+      <ul class="links-inner__box">
+        <li><a href="#"><span><img src="../img/buyicon_pc.png">windows max linux</span></a></li>
+        <li><a href="#"><span><img src="../img/buyicon_ps4.png">playstation 4</span></a></li>
       </ul>
+        <ul class="links-inner__box">
+          <li><a href="#"><span><img src="../img/buyicon_switch.png">nintendo switch</span></a></li>
+        <li><a href="#"><span><img src="../img/buyicon_xbone.png">xbox one</span></a></li>
+        </ul>
+</div>
     </article>
-    <article class="video"></article>
+    <article class="video">
+      <div class="video__video">
+        <iframe width="900" height="506" src="https://www.youtube.com/embed/T-qmLZfMvKU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </article>
     <article class="game_intro">
       <h5></h5>
+      <div class="game_intro__text">
       <p class="game_intro_left"></p>
       <p class="game_intro_right"></p>
+    </div>
     </article>
     <article class="links">
-      <ul>
-        <li><a href="#"></a></li>
+      <div class="links-inner">
+      <ul  class="links-inner__box icon">
+        <li>
+          <a href="#">Campo Santo store</a>
+        </li>
+        <li>
+          <a href="#">merchandise</a>
+        </li>
       </ul>
-      <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+      <ul class="links-inner__box icon">
+        <li><a href="#">screens & trailers</a></li>
+        <li><a href="#">firewatch faq</a></li>
       </ul>
+    </div>
     </article>
     <article class="screenshots">
       <ul>
@@ -85,54 +102,6 @@
     </ul>
   </footer>
   </div>
-<!-- <div id="wrap">
-    <header id="headBox">
-      <h1><a href="./parallax.html">fire watch</a></h1>
-      <nav id="navBox">
-        <h2 class="hidden">global navigation</h2>
-        <ul>
-          <li><a href="#">fire watch</a></li>
-          <li><a href="#">development blog</a></li>
-          <li><a href="#">campo store</a></li>
-          <li><a href="#">quarterly review</a></li>
-        </ul>
-      </nav>
-    </header>
-    <article id="viewBox">
-      <h2 class="hidden">fire watch</h2>
-      <p class="hidden">description of fire watch</p>
-       parallax이미지 배치 
-      <div class="view_1"></div>
-      <div class="view_2"></div>
-      <div class="view_3"></div>
-      <div class="view_4"></div>
-      <div class="view_5"></div>
-      <div class="view_6"></div>
-      <div class="view_7"></div>
-      <div class="view_8"></div>
-      <div class="view_9"></div>
-    </article>
-    <article id="gameNarrBox">
-      <h2>description of the game</h2>
-      <div class="no_data"></div>
-    </article>
-    <article id="sampleBox">
-      <h2>demo img</h2>
-      <ul class="hidden_wrap">
-        <li><a href="#"><span>description of the game img 1</span></a></li>
-        <li><a href="#"><span>description of the game img 2</span></a></li>
-        <li><a href="#"><span>description of the game img 3</span></a></li>
-        <li><a href="#"><span>description of the game img 4</span></a></li>
-      </ul>
-    </article>
-    <footer id="footBox">
-      <h2>game infomation</h2>
-      <p>©2020 CAMPO SANTO, IN COOPERATION WITH PANIC.<br />
-        FIREWATCH IS A TRADEMARK OF CAMPO SANTO.<br />      
-        NINTENDO SWITCH IS A TRADEMARK OF NINTENDO.</p>
-    </footer>
-  </div> -->
-  
     <!-- script -->
     <script src="../js/main.js"></script>
 </body>
