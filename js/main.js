@@ -28,15 +28,29 @@ for(let i=0; i<9; i++){
     
     const createDiv = document.createElement('div');
     viewBox.append(createDiv);
-    
-    const imgBox = viewBox.querySelectorAll('div');
-    
-    imgBox.forEach((div, j)=> {
-        
-        let imgUrl = `url('../img/parallax${j}.png')`;
-        div.style.backgroundImage = imgUrl;
-    });
 }
+
+const imgBox = viewBox.querySelectorAll('div');
+
+imgBox.forEach((div, i)=> {    
+    let imgUrl = `url('../img/parallax${i}.png')`;
+    div.style.backgroundImage = imgUrl;      
+    div.style.backgroundPosition = '50% 100%';  
+    div.style.bottom = 0;    
+    div.style.top = 'auto';    
+});
+
+window.addEventListener('scroll', ()=> {
+
+    let scroll = document.querySelector('html').scrollTop / imgBox.length;
+    // console.log(scroll);
+
+    imgBox.forEach( (select, i) => {
+        if(!(i === imgBox.length-1)){
+            select.style.bottom = -(scroll * (imgBox.length - i) ) + 'px';
+        }
+    });
+});
 
 const gameIntro = document.querySelector('.game_intro');
 const gameIntroTitle = gameIntro.querySelector('h5');
